@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon"
+        href="https://www.stardewvalley.net/wp-content/uploads/2017/12/cropped-chickenfavicon-32x32.png">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> -->
+    <title>Stardew Valley</title>
+</head>
+
+<body id="home">
+    <header style="height: 50px;">
+        <a href="#main1" class="skip">Skip to Main Content</a>
+        <nav id="menu">
+            <ul>
+                <li><a href="index.html" class="page">Home</a></li>
+                <li><a href="characters.html">Characters</a></li>
+                <li><a href="musics.html">Musics</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main1">
+        <h1><img src="images/main_logo.png" alt="pixel style logo of stardew valley"></h1>
+        <div id="scroll">
+            <div id="stars">
+                <img src="images/home/stars.png" alt="">
+            </div>
+            <div id="level1">
+                <img src="images/home/mount.png" alt="">
+            </div>
+            <div id="level2">
+                <img src="images/home/mount2.png" alt="">
+            </div>
+            <div id="level3">
+                <img src="images/home/mount3.png" alt="">
+            </div>
+            <div id="level4">
+                <img src="images/home/mount4.png" alt="">
+            </div>
+            <div id="level5">
+                <img src="images/home/mount5.png" alt="">
+            </div>
+            <div id="front">
+                <img src="images/home/front.png" alt="">
+            </div>
+        </div>
+
+        <script src="js/scroll.js"></script>
+        <div id="non_scroll">
+            <p><br>Welcome to Stardew Valley, where the serene countryside whispers promises prosperity!
+                <br><br> But wait, there's more to this picturesque landscape than meets the eye.
+                <br><br> Cripy caves, quirky locals, mysterious islands...
+                <br><br> Are you ready to create your dream farm and go for adventures?
+            </p>
+            <h2>Gallery</h2>
+            <div id="imgSlider">
+                <button id="left" onclick="plusDivs(-1)">&#10094;</button>
+                <img class="mySlides" src="images/slider/Marriage.webp" alt="chat with Abigail after marriage">
+                <img class="mySlides" src="images/slider/NightMarket.png" alt="night market on wharf in winter">
+                <img class="mySlides" src="images/slider/Multiplayer.png" alt="many palyers farming together">
+                <button id="right" onclick="plusDivs(1)">&#10095;</button>
+            </div>
+        </div>
+        <script>
+            var slideIndex = 1;
+            showDivs(slideIndex);
+
+            function plusDivs(n) {
+                showDivs(slideIndex += n);
+            }
+
+            function showDivs(n) {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                if (n > x.length) { slideIndex = 1 }
+                if (n < 1) { slideIndex = x.length }
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                x[slideIndex - 1].style.display = "block";
+            }
+        </script>
+    </main>
+
+    <footer id="footer1">
+        <p>Stardew Valley Copyright &copy; 2016-2024 ConcernedApe LLC</p>
+        <div id="footer_links">
+            <p>Helpful links:</p>
+            <ul>
+                <li><a href="https://www.stardewvalley.net/">Stardew Valley Official website</a> </li>
+                <li><a href="https://store.steampowered.com/app/413150/Stardew_Valley/">Stardew Valley on Steam</a></li>
+                <li><a href="https://www.nexusmods.com/stardewvalley">Stardew Valley Mods</a></li>
+                <li><a href="https://www.reddit.com/r/StardewValley/">Stardew Valley Reddit</a></li>
+                <li><a href="https://stardewvalleywiki.com/Stardew_Valley_Wiki">Stardew Valley Wiki</a></li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+
+</html>

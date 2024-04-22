@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon"
+        href="https://www.stardewvalley.net/wp-content/uploads/2017/12/cropped-chickenfavicon-32x32.png">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> -->
+    <title>Stardew Valley</title>
+</head>
+
+<body>
+    <header>
+        <a href="#main2" class="skip">Skip to Main Content</a>
+        <nav id="menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="characters.html" class="page">Characters</a></li>
+                <li><a href="musics.html">Musics</a></li>
+            </ul>
+        </nav>
+        <h1>Characters</h1>
+
+    </header>
+
+    <main id="main2">
+        <script src="js/char_filter.js"></script>
+        <h2>Marriage Candidates</h2>
+
+        <div id="char_filter">
+            <button id="any" onclick="filter(0); updateLastClicked(this)">Any</button>
+            <button id="bachelor" onclick="filter(1); updateLastClicked(this)">Bachelor</button>
+            <button id="bachelorette" onclick="filter(2); updateLastClicked(this)">Bachelorette</button>
+        </div>
+
+        <div class="characters">
+            <div id="Abigail" class="bachelorette character">
+                <a href="https://stardewvalleywiki.com/Abigail">
+                    <h3>Abigail</h3>
+                    <img src="images/char/female/Abigail.png" width="200" alt="Purple haired girl called Abigail">
+                </a>
+            </div>
+            <div id="Emily" class="bachelorette character">
+                <a href="https://stardewvalleywiki.com/Emily">
+                    <h3>Emily</h3>
+                    <img src="images/char/female/Emily.png" width="200" alt="Blue haired girl called Emily">
+                </a>
+            </div>
+            <div id="Haley" class="bachelorette character">
+                <a href="https://stardewvalleywiki.com/Haley">
+                    <h3>Haley</h3>
+                    <img src="images/char/female/Haley.png" width="200" alt="Blond haired girl called Haley">
+                </a>
+            </div>
+            <div id="Leah" class="bachelorette character">
+                <a href="https://stardewvalleywiki.com/Leah">
+                    <h3>Leah</h3>
+                    <img src="images/char/female/Leah.png" width="200" alt="Brown braided hair girl called Leah">
+                </a>
+            </div>
+            <div id="Maru" class="bachelorette character">
+                <a href="https://stardewvalleywiki.com/Maru">
+                    <h3>Maru</h3>
+                    <img src="images/char/female/Maru.png" width="200" alt="Red haired girl called Maru">
+                </a>
+            </div>
+            <div id="Penny" class="bachelorette character">
+                <a href="https://stardewvalleywiki.com/Penny">
+                    <h3>Penny</h3>
+                    <img src="images/char/female/Penny.png" width="200" alt="Brown hair-up girl called Penny">
+                </a>
+            </div>
+
+            <div id="Alex" class="bachelor character">
+                <a href="https://stardewvalleywiki.com/Alex">
+                    <h3>Alex</h3>
+                    <img src="images/char/male/Alex.png" width="200" alt="Brown haired sports boy called Alex">
+                </a>
+            </div>
+            <div id="Elliott" class="bachelor character">
+                <a href="https://stardewvalleywiki.com/Elliott">
+                    <h3>Elliott</h3>
+                    <img src="images/char/male/Elliott.png" width="200" alt="Long haired boy called Elliott">
+                </a>
+            </div>
+            <div id="Harvey" class="bachelor character">
+                <a href="https://stardewvalleywiki.com/Harvey">
+                    <h3>Harvey</h3>
+                    <img src="images/char/male/Harvey.png" width="200" alt="Brown haired glasses boy called Harvey">
+                </a>
+            </div>
+            <div id="Sam" class="bachelor character">
+                <a href="https://stardewvalleywiki.com/Sam">
+                    <h3>Sam</h3>
+                    <img src="images/char/male/Sam.png" width="200" alt="Yellow haired hansome boy called Sam">
+                </a>
+            </div>
+            <div id="Sebastian" class="bachelor character">
+                <a href="https://stardewvalleywiki.com/Sebastian">
+                    <h3>Sebastian</h3>
+                    <img src="images/char/male/Sebastian.png" width="200"
+                        alt="Purple haired hansome boy called Sebastian">
+                </a>
+            </div>
+            <div id="Shane" class="bachelor character">
+                <a href="https://stardewvalleywiki.com/Shane">
+                    <h3>Shane</h3>
+                    <img src="images/char/male/Shane.png" width="200" alt="Slovenly boy called Shane">
+                </a>
+            </div>
+        </div>
+        <script src="js/char_hover.js"></script>
+    </main>
+
+
+    <footer>
+        <p>Stardew Valley Copyright &copy; 2016-2024 ConcernedApe LLC</p>
+        <div id="footer_links">
+            <p>Helpful links:</p>
+            <ul>
+                <li><a href="https://www.stardewvalley.net/">Stardew Valley Official website</a> </li>
+                <li><a href="https://store.steampowered.com/app/413150/Stardew_Valley/">Stardew Valley on Steam</a></li>
+                <li><a href="https://www.nexusmods.com/stardewvalley">Stardew Valley Mods</a></li>
+                <li><a href="https://www.reddit.com/r/StardewValley/">Stardew Valley Reddit</a></li>
+                <li><a href="https://stardewvalleywiki.com/Stardew_Valley_Wiki">Stardew Valley Wiki</a></li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+
+</html>

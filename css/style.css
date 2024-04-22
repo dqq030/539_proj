@@ -1,0 +1,374 @@
+@font-face {
+    font-family: "thaleahfat";
+    src: url("../font/thaleahfat-webfont.woff2") format("woff2");
+    font-weight: 400;
+}
+
+.skip {
+    text-decoration: underline;
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background-color: white;
+    font-family: helvetica;
+    font-size: 15px;
+}
+
+.skip:focus {
+    top: 0;
+}
+
+footer a:focus,
+footer a:hover {
+    text-decoration: underline;
+}
+
+#non_scroll button:focus,
+#non_scroll button:hover {
+    color: rgb(161, 20, 20);
+}
+
+.page {
+    color: rgb(161, 20, 20);
+    text-decoration: underline;
+}
+
+#menu li:hover,
+#menu a:focus {
+    color: rgb(161, 20, 20);
+}
+
+body {
+    background: url(../images/home/stardewbackground.png) no-repeat;
+    background-size: cover;
+    margin: 5px;
+    padding: 5px;
+}
+
+#home {
+    background: url(../images/home/background.png);
+    background-size: 0.2%;
+    padding: 0;
+    margin: 0;
+}
+
+#scroll {
+    height: 390px;
+    padding: 0;
+    margin: 0;
+}
+
+#scroll div {
+    height: 290px;
+    width: 100%;
+    position: absolute;
+    top: 50px;
+}
+
+div #front {
+    height: 200px;
+    width: 100%;
+    position: absolute;
+    top: 250px;
+}
+
+#scroll div img {
+    height: 100%;
+    min-width: 100%;
+    object-fit: cover;
+}
+
+#non_scroll {
+    background-color: rgb(246, 228, 145);
+}
+
+#non_scroll p {
+    padding: 0 26px 10px 40px;
+    text-align: center;
+}
+
+#scroll #stars {
+    z-index: -100;
+    position: absolute;
+    top: 0;
+    height: 400px;
+}
+
+#level1 {
+    z-index: -99;
+}
+
+#level2 {
+    z-index: -98;
+}
+
+#level3 {
+    z-index: -97;
+}
+
+#level4 {
+    z-index: -96;
+}
+
+#level5 {
+    z-index: -95;
+}
+
+#main1 h1 {
+    position: absolute;
+    z-index: 1;
+    top: 50px;
+}
+
+
+main {
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 20px;
+}
+
+#main1 {
+    padding: 0;
+    margin: 0;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+
+footer {
+    background-color: rgb(146, 146, 146);
+}
+
+nav {
+    padding: 5px;
+}
+
+nav li {
+    background-color: rgb(243, 227, 56);
+    /* rgba(157, 227, 255, 0.621); */
+    display: inline-block;
+    padding: 0 5px;
+    border-radius: 4px;
+    margin: 3px
+}
+
+html,
+body {
+    font-family: "thaleahfat", helvetica;
+    font-size: 25px;
+}
+
+header * {
+    font-size: 30px;
+}
+
+footer * {
+    font-family: helvetica;
+    font-size: 12px;
+}
+
+h1 {
+    font-size: 60px;
+    color: rgb(243, 147, 13);
+    text-align: center;
+    margin: auto;
+    width: 100%;
+}
+
+h2 {
+    font-size: 42px;
+    text-align: center;
+    color: rgb(92, 63, 27);
+    margin-top: 10px;
+}
+
+h1 img {
+    max-width: 80%;
+}
+
+.mySlides {
+    width: 90%;
+}
+
+#imgSlider {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+#left,
+#right {
+    font-size: 40px;
+    cursor: pointer;
+}
+
+#char_filter button {
+    background-color: rgba(157, 227, 255, 0.621);
+    padding: 0 5px;
+    margin: 6px;
+    border-radius: 3px;
+}
+
+#char_filter .clicked {
+    text-decoration: underline;
+    color: rgb(13, 21, 105)
+}
+
+#char_filter button:focus,
+#char_filter button:hover {
+    color: rgb(11, 22, 136)
+}
+
+#char_filter {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 10px;
+}
+
+.characters {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.character {
+    margin: 6px;
+}
+
+.bachelor,
+.bachelorette {
+    width: 40%;
+    max-width: 150px;
+}
+
+.playlist {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+button {
+    cursor: pointer;
+}
+
+.playlist button::before {
+    content: "🎵";
+    /* make it smaller */
+    font-size: 20px;
+}
+
+.playlist button {
+    display: block;
+    margin: auto;
+    text-align: center;
+    /* hover pointer */
+    cursor: pointer;
+}
+
+audio {
+    /* center */
+    display: block;
+    margin: 5px auto;
+    padding: 5px;
+}
+
+.playlist button:hover {
+    color: rgb(140, 0, 0);
+}
+
+.playlist button:focus {
+    color: rgb(140, 0, 0);
+}
+
+
+@media screen and (min-width: 500px) {
+    .mySlides {
+        width: 70%;
+    }
+
+    #scroll {
+        height: 450px;
+    }
+
+    #scroll div {
+        height: 290px;
+        top: 110px;
+    }
+
+    div #front {
+        height: 220px;
+        top: 300px;
+    }
+
+    h1 img {
+        max-width: 60%;
+    }
+
+    #scroll #stars {
+        height: 560px
+    }
+}
+
+@media screen and (min-width: 750px) {
+    home {
+        background-size: 0.01%;
+    }
+
+    h1 img {
+        max-width: 50%;
+    }
+
+    #scroll {
+        height: 475px;
+    }
+
+    #scroll div {
+        height: 390px;
+        top: 35px;
+    }
+
+    div #front {
+        height: 220px;
+        top: 330px;
+    }
+
+    .mySlides {
+        width: 60%;
+    }
+
+    .playlist>div {
+        width: 30%;
+    }
+
+    #scroll #stars {
+        height: 830px
+    }
+}
+
+@media screen and (min-width: 950px) {
+
+    h1 img {
+        max-width: 45%;
+    }
+
+    h1 {
+        margin-top: 20px;
+    }
+
+    #scroll {
+        height: 630px;
+    }
+
+    #scroll div {
+        height: 500px;
+        top: 30px;
+    }
+
+    div #front {
+        height: 280px;
+        top: 410px;
+    }
+
+    #scroll #stars {
+        height: 960px
+    }
+}
